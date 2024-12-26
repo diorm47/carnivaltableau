@@ -12,6 +12,10 @@
         <a href="./index.html">
           <h1 class="logo">Carnivaltableau</h1>
         </a>
+        <div class="nav_right">
+          <a href="./contact-us.html"><p>Contact Us</p></a>
+  
+        </div>
       </div>
     </nav>
 
@@ -52,12 +56,12 @@
                 type="text"
                 placeholder="Email address"
               />
-              <div class="confirm_check" onclick="toggleAgeModal()">
+              <div class="confirm_check">
                 <input type="checkbox" name="" id="" />
                 <p>I am 18+ years old</p>
               </div>
               <div class="submit_btn">
-                <a href="./contact-us.html"> <button>Contact us</button></a>
+                <button>Contact us</button>
               </div>
             </div>
           </div>
@@ -95,8 +99,8 @@
         </p>
 
         <div class="age_modal_btns">
-          <button onclick="toggleAgeModal()">I'm Under 18</button>
-          <button onclick="toggleAgeModal()">I'm 18 or Older</button>
+          <button>I'm Under 18</button>
+          <button>I'm 18 or Older</button>
         </div>
       </div>
     </div>
@@ -115,14 +119,20 @@
           sessionStorage.setItem("cookiesAccepted", "true");
         });
       });
-    </script>
 
-    <script>
-      function toggleAgeModal() {
-        document
-          .querySelector(".overlay")
-          .classList.toggle("age_modal_visible");
-      }
+      document.addEventListener("DOMContentLoaded", () => {
+        const ageModal = document.querySelector(".overlay");
+        const closeButton = document.querySelector(".close_modal");
+
+        if (sessionStorage.getItem("age_modal") === "true") {
+          ageModal.classList.remove("age_modal_visible");
+        }
+
+        closeButton.addEventListener("click", () => {
+          ageModal.classList.remove("age_modal_visible");
+          sessionStorage.setItem("age_modal", "true");
+        });
+      });
     </script>
   </body>
 </html>

@@ -571,7 +571,17 @@ ul ol {
 .age_modal_visible {
   display: flex;
 }
-
+.nav_right {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.nav_right a p {
+  color: #000;
+}
+.nav_right a p:hover {
+  text-decoration: underline;
+}
 @media only screen and (max-width: 1330px) {
   .container {
     padding-left: 20px;
@@ -590,6 +600,10 @@ ul ol {
 }
 
 @media only screen and (max-width: 600px) {
+  .nav_wrapper  {
+    flex-direction: column;
+    gap: 20px;
+  }
   .header_container,
   .casino_cards,
   .line_descs_container,
