@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Play | Carnivaltableau</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body class="seconadary_body">
+    <nav class="seconadary_nav">
+      <div class="nav_wrapper container_s">
+        <a href="./index.html">
+          <h1 class="logo">Carnivaltableau</h1>
+        </a>
+      </div>
+    </nav>
+
+    <section class="play_now">
+      <div class="container_s play_now_wrapper">
+        <div class="play_now_title">
+          <h2>china slots – play now</h2>
+        </div>
+        <iframe
+          src="https://carnivaltableau.com/games/china/index.html"
+          frameborder="0"
+          style="width: 100% !important; height: 733px"
+        ></iframe>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer_wrapper container">
+        <div class="footer_top">
+          <div class="disclaimer">
+            <img src="./assets/Disclaimer.png" alt="" />
+            <p>
+              <span>
+                Anyone under the age of 18 is not allowed to use the game on
+                this site.</span
+              >
+              <br />
+              No actual money is involved or awarded in the social casino game
+              we’ve selected; it’s all in good fun. Winning in our games does
+              not guarantee you will win actual cash or other rewards.
+            </p>
+          </div>
+          <div class="contact_us_block">
+            <h4>Contact us</h4>
+            <form action="#" class="contact_us_block_form">
+              <input
+                class="email_input"
+                type="text"
+                placeholder="Email address"
+              />
+              <div class="confirm_check" onclick="toggleAgeModal()">
+                <input type="checkbox" name="" id="" />
+                <p>I am 18+ years old</p>
+              </div>
+              <div class="submit_btn">
+                <a href="./contact-us.html"> <button>Contact us</button></a>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="footer_btm">
+          <div class="copyright">
+            <img src="./assets/footer-icon.png" alt="" />
+            <p>© 2024 Carnivaltableau.com – All rights reserved.</p>
+          </div>
+          <div class="footer_menu">
+            <a href="./terms-conditions.html"><p>Terms & Conditions</p></a>
+            <a href="./privacy-policy.html"><p>Privacy Policy</p></a>
+            <a href="./cookie-policy.html"><p>Cookie Policy</p></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="cookies_modal">
+      <p>
+        We use to enhance your experience. By continuing to visit this site you
+        agree to our use of cookies.
+        <a href="./cookie-policy.html">Learn more</a>
+      </p>
+      <button class="play_btn accept_btn">Accept</button>
+    </div>
+
+    <div class="overlay">
+      <div class="age_modal">
+        <h2>Age Verification Required</h2>
+        <p>
+          You must be 18 years or older to play this game. <br />
+          Please confirm your age to continue.
+        </p>
+
+        <div class="age_modal_btns">
+          <button onclick="toggleAgeModal()">I'm Under 18</button>
+          <button onclick="toggleAgeModal()">I'm 18 or Older</button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const cookiesModal = document.querySelector(".cookies_modal");
+        const acceptButton = document.querySelector(".accept_btn");
+
+        if (sessionStorage.getItem("cookiesAccepted") === "true") {
+          cookiesModal.style.display = "none";
+        }
+
+        acceptButton.addEventListener("click", () => {
+          cookiesModal.style.display = "none";
+          sessionStorage.setItem("cookiesAccepted", "true");
+        });
+      });
+    </script>
+
+    <script>
+      function toggleAgeModal() {
+        document
+          .querySelector(".overlay")
+          .classList.toggle("age_modal_visible");
+      }
+    </script>
+  </body>
+</html>

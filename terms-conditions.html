@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Terms & Conditions | Carnivaltableau</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body class="seconadary_body">
+    <nav class="seconadary_nav">
+      <div class="nav_wrapper container">
+        <a href="./index.html">
+          <h1 class="logo">Carnivaltableau</h1>
+        </a>
+        <a href="./play-now.html">
+          <button class="play_btn">
+            play now
+            <svg
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              id="arrow-right"
+              viewBox="0 0 1536 1896.0833"
+            >
+              <path
+                d="M1472 960q0 54-37 91l-651 651q-39 37-91 37-51 0-90-37l-75-75q-38-38-38-91t38-91l293-293H117q-52 0-84.5-37.5T0 1024V896q0-53 32.5-90.5T117 768h704L528 474q-38-36-38-90t38-90l75-75q38-38 90-38 53 0 91 38l651 651q37 35 37 90z"
+                fill="#fff"
+              ></path>
+            </svg></button
+        ></a>
+      </div>
+    </nav>
+
+    <section class="terms">
+      <div class="terms_block container_s">
+        <div class="play_now_title terms_title">
+          <h2>Terms & Conditions</h2>
+        </div>
+
+        <div class="term_description">
+          <p>
+            By accessing or using our social casino game on
+            <span>Carnivaltableau.com</span>, you agree to be bound by the
+            following terms and conditions. If you do not agree with any part of
+            these terms, please refrain from using our services.
+          </p>
+          <h4>Eligibility</h4>
+          <p>
+            Our games are intended for users aged 18 years or older. By using
+            our services, you confirm that you meet this age requirement.
+          </p>
+          <h4>Non-Monetary Nature</h4>
+          <p>
+            The games offered on our platform are for entertainment purposes
+            only and do not involve any real money gambling or wagering. You
+            cannot win or lose real money while playing these games.
+          </p>
+          <h4>In-Game Purchases</h4>
+          <p>
+            Some of our games may offer virtual items or in-game currencies that
+            can be purchased using real money. These items are solely for
+            enhancing gameplay and hold no real monetary value. Once purchased,
+            these virtual items cannot be refunded or transferred.
+          </p>
+          <h4>Responsible Gaming</h4>
+          <p>
+            We encourage responsible gaming and urge players to set limits on
+            their playtime. If you feel your gaming habits are becoming
+            problematic, please seek help from a professional.
+          </p>
+          <h4>Intellectual Property</h4>
+          <p>
+            All content, graphics, and game mechanics are the exclusive property
+            of this platform. Unauthorized reproduction, modification, or
+            distribution of any material is strictly prohibited.
+          </p>
+          <h4>Modifications</h4>
+          <p>
+            We reserve the right to modify these terms at any time. Any changes
+            will be posted on this page, and it is your responsibility to review
+            them regularly.
+          </p>
+          <h4>Termination</h4>
+          <p>
+            We may suspend or terminate your access to the games without prior
+            notice if you are found to be in violation of these terms or engage
+            in any behavior that could harm the platform or other users.
+          </p>
+          <div class="line"></div>
+          <h4>
+            By continuing to use our platform, you acknowledge that you have
+            read and agree to abide by these terms and conditions.
+          </h4>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer_wrapper container">
+        <div class="footer_top">
+          <div class="disclaimer">
+            <img src="./assets/Disclaimer.png" alt="" />
+            <p>
+              <span>
+                Anyone under the age of 18 is not allowed to use the game on
+                this site.</span
+              >
+              <br />
+              No actual money is involved or awarded in the social casino game
+              we’ve selected; it’s all in good fun. Winning in our games does
+              not guarantee you will win actual cash or other rewards.
+            </p>
+          </div>
+          <div class="contact_us_block">
+            <h4>Contact us</h4>
+            <form action="#" class="contact_us_block_form">
+              <input
+                class="email_input"
+                type="text"
+                placeholder="Email address"
+              />
+              <div class="confirm_check" onclick="toggleAgeModal()">
+                <input type="checkbox" name="" id="" />
+                <p>I am 18+ years old</p>
+              </div>
+              <div class="submit_btn">
+                <a href="./contact-us.html"> <button>Contact us</button></a>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="footer_btm">
+          <div class="copyright">
+            <img src="./assets/footer-icon.png" alt="" />
+            <p>© 2024 Carnivaltableau.com – All rights reserved.</p>
+          </div>
+          <div class="footer_menu">
+            <a href="./terms-conditions.html"><p>Terms & Conditions</p></a>
+            <a href="./privacy-policy.html"><p>Privacy Policy</p></a>
+            <a href="./cookie-policy.html"><p>Cookie Policy</p></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="cookies_modal">
+      <p>
+        We use to enhance your experience. By continuing to visit this site you
+        agree to our use of cookies.
+        <a href="./cookie-policy.html">Learn more</a>
+      </p>
+      <button class="play_btn accept_btn">Accept</button>
+    </div>
+
+    <div class="overlay">
+      <div class="age_modal">
+        <h2>Age Verification Required</h2>
+        <p>
+          You must be 18 years or older to play this game. <br />
+          Please confirm your age to continue.
+        </p>
+
+        <div class="age_modal_btns">
+          <button onclick="toggleAgeModal()">I'm Under 18</button>
+          <button onclick="toggleAgeModal()">I'm 18 or Older</button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const cookiesModal = document.querySelector(".cookies_modal");
+        const acceptButton = document.querySelector(".accept_btn");
+
+        if (sessionStorage.getItem("cookiesAccepted") === "true") {
+          cookiesModal.style.display = "none";
+        }
+
+        acceptButton.addEventListener("click", () => {
+          cookiesModal.style.display = "none";
+          sessionStorage.setItem("cookiesAccepted", "true");
+        });
+      });
+    </script>
+
+    <script>
+      function toggleAgeModal() {
+        document
+          .querySelector(".overlay")
+          .classList.toggle("age_modal_visible");
+      }
+    </script>
+  </body>
+</html>

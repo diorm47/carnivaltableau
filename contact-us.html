@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | Carnivaltableau</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body class="seconadary_body">
+    <nav class="seconadary_nav">
+      <div class="nav_wrapper container">
+        <a href="./index.html">
+          <h1 class="logo">Carnivaltableau</h1>
+        </a>
+        <a href="./play-now.html">
+          <button class="play_btn">
+            play now
+            <svg
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              id="arrow-right"
+              viewBox="0 0 1536 1896.0833"
+            >
+              <path
+                d="M1472 960q0 54-37 91l-651 651q-39 37-91 37-51 0-90-37l-75-75q-38-38-38-91t38-91l293-293H117q-52 0-84.5-37.5T0 1024V896q0-53 32.5-90.5T117 768h704L528 474q-38-36-38-90t38-90l75-75q38-38 90-38 53 0 91 38l651 651q37 35 37 90z"
+                fill="#fff"
+              ></path>
+            </svg></button
+        ></a>
+      </div>
+    </nav>
+
+    <section class="terms">
+      <div class="terms_block container_s">
+        <div class="play_now_title terms_title contacts_title">
+          <h2>Contact Us</h2>
+          <p>
+            Get in touch with us to learn more about what Carnivaltableau has to
+            offer. <br />
+            Fill out this form, and our team will reply shortly.
+          </p>
+        </div>
+
+        <form action="#" class="contact_form">
+          <input type="text" name="" id="" placeholder="Your name" />
+          <input type="email" name="" id="" placeholder="Email" />
+          <textarea placeholder="Message"></textarea>
+          <div class="submit_btn">
+            <button>Contact us</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer_wrapper container">
+        <div class="footer_top">
+          <div class="disclaimer">
+            <img src="./assets/Disclaimer.png" alt="" />
+            <p>
+              <span>
+                Anyone under the age of 18 is not allowed to use the game on
+                this site.</span
+              >
+              <br />
+              No actual money is involved or awarded in the social casino game
+              we’ve selected; it’s all in good fun. Winning in our games does
+              not guarantee you will win actual cash or other rewards.
+            </p>
+          </div>
+          <div class="contact_us_block">
+            <h4>Contact us</h4>
+            <form action="#" class="contact_us_block_form">
+              <input
+                class="email_input"
+                type="text"
+                placeholder="Email address"
+              />
+              <div class="confirm_check" onclick="toggleAgeModal()">
+                <input type="checkbox" name="" id="" />
+                <p>I am 18+ years old</p>
+              </div>
+              <div class="submit_btn">
+                <a href="./contact-us.html"> <button>Contact us</button></a>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="footer_btm">
+          <div class="copyright">
+            <img src="./assets/footer-icon.png" alt="" />
+            <p>© 2024 Carnivaltableau.com – All rights reserved.</p>
+          </div>
+          <div class="footer_menu">
+            <a href="./terms-conditions.html"><p>Terms & Conditions</p></a>
+            <a href="./privacy-policy.html"><p>Privacy Policy</p></a>
+            <a href="./cookie-policy.html"><p>Cookie Policy</p></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="cookies_modal">
+      <p>
+        We use to enhance your experience. By continuing to visit this site you
+        agree to our use of cookies.
+        <a href="./cookie-policy.html">Learn more</a>
+      </p>
+      <button class="play_btn accept_btn">Accept</button>
+    </div>
+
+    <div class="overlay">
+      <div class="age_modal">
+        <h2>Age Verification Required</h2>
+        <p>
+          You must be 18 years or older to play this game. <br />
+          Please confirm your age to continue.
+        </p>
+
+        <div class="age_modal_btns">
+          <button onclick="toggleAgeModal()">I'm Under 18</button>
+          <button onclick="toggleAgeModal()">I'm 18 or Older</button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const cookiesModal = document.querySelector(".cookies_modal");
+        const acceptButton = document.querySelector(".accept_btn");
+
+        if (sessionStorage.getItem("cookiesAccepted") === "true") {
+          cookiesModal.style.display = "none";
+        }
+
+        acceptButton.addEventListener("click", () => {
+          cookiesModal.style.display = "none";
+          sessionStorage.setItem("cookiesAccepted", "true");
+        });
+      });
+    </script>
+
+    <script>
+      function toggleAgeModal() {
+        document
+          .querySelector(".overlay")
+          .classList.toggle("age_modal_visible");
+      }
+    </script>
+
+  </body>
+</html>
