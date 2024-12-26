@@ -571,3 +571,102 @@ ul ol {
 .age_modal_visible {
   display: flex;
 }
+
+@media only screen and (max-width: 1330px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  br {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 1230px) {
+  .container_s {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .header_container,
+  .casino_cards,
+  .line_descs_container,
+  .footer_top,
+  .footer_btm {
+    flex-direction: column;
+  }
+  .logo {
+    font-size: 13px;
+  }
+  body {
+    padding-top: 80px;
+  }
+  .header_container {
+    width: 100%;
+  }
+  .header_container img {
+    width: 100%;
+  }
+  .header_content h1,
+  .casion_game_title h2 {
+    font-size: 30px;
+  }
+  .main_header {
+    padding-bottom: 70px;
+  }
+  .casino_card img {
+    width: 145px;
+  }
+  .casino_card p {
+    font-size: 15px;
+  }
+  .casino_cards {
+    gap: 30px;
+  }
+  .china_slots .header_content p,
+  .china_slots .header_content h1 {
+    text-align: center;
+  }
+  .line_descs_container  {
+    align-items: start;
+  }
+  .footer_top {
+    padding: 0;
+    gap: 30px;
+  }
+  .footer_btm {
+    gap: 20px;
+  }
+  .footer_menu {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .age_modal {
+    width: 100%;
+    padding: 20px;
+  }
+  .overlay {
+    padding: 0 15px;
+  }
+  .cookies_modal {
+    left: 20px;
+    padding: 20px;
+    gap: 20px;
+    flex-direction: column;
+  }
+  nav {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  nav .play_btn {
+    padding: 9px 14px;
+  }
+  .terms, .play_now {
+   padding: 40px 15px;
+  }
+  .play_now_wrapper iframe {
+    height: 220px !important; 
+  }
+}
