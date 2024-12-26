@@ -669,4 +669,7 @@ ul ol {
   .play_now_wrapper iframe {
     height: 220px !important; 
   }
+  .contact_us_block_form .email_input, .contact_us_block {
+    width: 100%;
+  }
 }
